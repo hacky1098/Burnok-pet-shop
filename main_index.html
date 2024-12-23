@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burnok Petshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Snow Effect -->
+<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
+
+<audio autoplay loop>
+    <source src="https://h.top4top.io/m_32777646r1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+    <header>
+        <div class="header-content">
+            <img src="https://i.top4top.io/p_3278nvc7s1.jpg"" alt="Burnok Petshop Logo" class="logo">
+            <h1>Burnok Petshop</h1>
+        </div>
+        <nav>
+            <a href="main_index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <a href="cats.html">Cats</a>
+                    <a href="dogs.html">Dogs</a>
+                    <a href="catfood.html">Cat Food</a>
+                    <a href="dogfood.html">Dog Food</a>
+                    <a href="pettoy.html">Pet toy</a>
+                 </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="login.html" id="logoutLink">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to Burnok Petshop!</h2>
+        <p>Explore our wide range of pet products and services.</p>
+
+        <div class="featured-products">
+            <h3>Featured Products</h3>
+            <div class="product">
+                <img src="https://g.top4top.io/p_32798ihwe1.jpg" alt="Cuties Catz Tuna Flavor 22kg Cat Dry Food">
+                <h3>Cuties Catz Tuna Flavor 22kg Cat Dry Food</h3>
+                <p>Price: $90</p>
+                <a href="checkout.html?item=Cuties%20Catz%20tuna%20flavor&price=90" class="buy-button">Buy</a>
+                </div>
+                <div class="product">
+                    <img src="https://l.top4top.io/p_3279e4n5m1.jpg" alt="Orijen Original Cat Dry Food">
+                    <h3>Orijen Original Cat Dry Food</h3>
+                    <p>Price: $60</p>
+                    <a href="checkout.html?item=Orijen%20Original%20Cat%20Dry%20Food&price=60" class="buy-button">Buy</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://h.top4top.io/p_3279b3e7m1.jpg" alt="Supercoat Chicken Adult Small Breed Dry Dog Food">
+                        <h3>Supercoat Chicken Adult Small Breed Dry Dog Food</h3>
+                        <p>Price: $110</p>
+                        <a href="checkout.html?item=Supercoat%20Chicken%20Adult%20Small%20Breed%20Dry%20Dog%20Food&price=110" class="buy-button">Buy</a>
+                    </div>
+                    <div class="product">
+                        <img src="https://i.top4top.io/p_3279r2ki01.jpg" alt="Supercoat Chicken Puppy All Breed Dry Dog Food">
+                        <h3>Supercoat Chicken Puppy All Breed Dry Dog Food</h3>
+                        <p>Price: $205</p>
+                        <a href="checkout.html?item=Supercoat%20Chicken%20Puppy%20All%20Breed%20Dry%20Dog%20Food&price=205" class="buy-button">Buy</a>
+                    </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Burnok Petshop. All rights reserved.</p>
+    </footer>
+    <script>
+        // Check if the user is logged in (using localStorage for demo purposes)
+        const isLoggedIn = localStorage.getItem('loggedIn');
+
+        // Handle the Home link behavior based on login status
+        const homeLink = document.querySelector('a[href="main_index.html"]');
+        if (!isLoggedIn) {
+            // If not logged in, clicking Home redirects to the login page
+            homeLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default action of the link
+                window.location.href = 'login.html'; // Redirect to login page
+            });
+        }
+
+        // Logout functionality
+        document.getElementById('logoutLink').addEventListener('click', function() {
+            localStorage.removeItem('loggedIn');
+            window.location.href = 'login.html'; // Redirect to login page after logout
+        });
+    </script>
+ 
+</body>
+</html>

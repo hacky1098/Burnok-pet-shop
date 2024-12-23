@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog food for Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://i.top4top.io/p_3278nvc7s1.jpg" alt="Burnok Petshop Logo" class="logo">
+        <h1>Burnok Petshop</h1>
+        <nav>
+            <a href="main_index.html">Home</a>
+            <div class="dropdown">
+                <a href="#">Categories</a>
+                <div class="dropdown-content">
+                    <a href="cats.html">Cats</a>
+                    <a href="dogs.html">Dogs</a>
+                    <a href="catfood.html">Cat Food</a>
+                    <a href="dogfood.html">Dog Food</a>
+                    <a href="pettoy.html">Pet toy</a>
+                </div>
+            </div>
+            <a href="about.html">About</a>
+            <a href="login.html" id="logoutLink">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Our Cats</h2>
+        <div class="product">
+            <img src="https://h.top4top.io/p_3279l5fsa6.jpg" alt="Supercoat Chicken Adult Small Breed Dry Dog Food">
+            <h3>Supercoat Chicken Adult Small Breed Dry Dog Food</h3>
+            <p>Price: $110</p>
+            <a href="checkout.html?item=Supercoat%20Chicken%20Adult%20Small%20Breed%20Dry%20Dog%20Food&price=110" class="buy-button">Buy</a>
+        </div>
+
+        <div class="product">
+            <img src="https://j.top4top.io/p_327908sqa1.jpg" alt="Supercoat Chicken Puppy All Breed Dry Dog Food">
+            <h3>Supercoat Chicken Puppy All Breed Dry Dog Food</h3>
+            <p>Price: $205</p>
+            <a href="checkout.html?item=Supercoat%20Chicken%20Puppy%20All%20Breed%20Dry%20Dog%20Food&price=205" class="buy-button">Buy</a>
+        </div>
+
+        <div class="product">
+            <img src="https://k.top4top.io/p_327964on54.jpg" alt="Supercoat Adult Small Breed Tuna Dry Dog Food">
+            <h3>Supercoat Adult Small Breed Tuna Dry Dog Food</h3>
+            <p>Price: $280</p>
+            <a href="checkout.html?item=Supercoat%20Adult%20Small%20Breed%20Tuna%20Dry%20Dog%20Food&price=280" class="buy-button">Buy</a>
+        </div>
+
+        <div class="product">
+            <img src="https://a.top4top.io/p_3279cr9dd2.jpg" alt="Alpo Beef & Vegetables with Milk Essentials Puppy Dry Dog Food">
+            <h3>Alpo Beef & Vegetables with Milk Essentials Puppy Dry Dog Food</h3>
+            <p>Price: $330</p>
+            <a href="checkout.html?item=Alpo%20Beef%20&%20Vegetables%20with%20Milk%20Essentials%20Puppy%20Dry%20Dog%20Food&price=330" class="buy-button">Buy</a>
+        </div>
+
+        <div class="product">
+            <img src="https://c.top4top.io/p_3279c2wgc6.jpg" alt="Alpo Beef, Liver & Vegetable Adult Dry Dog Food">
+            <h3>Alpo Beef, Liver & Vegetable Adult Dry Dog Food</h3>
+            <p>Price: $110</p>
+            <a href="checkout.html?item=Alpo%20Beef,%20Liver%20&%20Vegetable%20Adult%20Dry%20Dog%20Food&price=110" class="buy-button">Buy</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Burnok Petshop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSuccessMessage() {
+            alert("Your message has been sent successfully!");
+        }
+
+        function validateForm(form) {
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
+
+            if (!name || !email || !message) {
+                alert("All fields are required!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
